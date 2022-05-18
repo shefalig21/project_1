@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html;charset=utf-8">
+ <style>
+ *{
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body{
+    margin: 0px;
+    background-color:rgb(253, 244, 226);
+
+    
+}
+
+.nav{
+    background-color: #333;
+    height: 74px; ;
+}
+
+.amaze,.wow{
+    color:aqua;
+}
+
+.nav a {
+    display: block;
+    color: white;
+    float:right ;
+    padding: 21px;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+
+.nav a.logout:hover{
+    color: red;
+}
+
+.nav a:hover{
+    background: rgb(7, 178, 190);
+    color: rgb(2, 32, 34);
+    transition: 0.3s;
+}
+
+.home{
+    margin-left: 220px;
+}
+
+
+
+.img span{
+    margin-left: 400px;
+    
+    
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 65px;
+    font-weight: 1000;
+
+}
+
+.text{
+    margin-top: 40px;
+}
+
+
+.text,.para,.para_2{
+    font-size: 30px;
+    padding-left: 30px;
+}
+
+.para_2{
+    padding-top: 40px;
+    padding-left: 30px;
+    
+}
+
+
+h2{
+    font-size: 43px;
+    font-weight: 600;
+    padding-left: 30px;
+    
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h3{
+    font-size: 30px;
+    font-weight: 400px;
+    padding-left: 30px;
+}
+
+
+.footer{
+    background: #303036;
+    color: #d3d3d3;
+    height: 450px;
+    position: relative;
+}
+
+.footer .footer-content{
+    
+    height: 350px;
+    display: flex;
+}
+
+.footer .footer-content .footer-section{
+    flex:1;
+    padding: 25px;
+    
+}
+
+.footer .footer-content .footer-section p{
+    padding-top: 30px;
+}
+
+.footer .footer-bottom{
+    background: #343a40;
+    color: #686868;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+.footer .footer-content .about .contact span{
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    padding-top: 20px;
+} 
+.footer .footer-content .about .socials a{
+    border: 1px solid gray;
+    width: 45px;
+    height: 41px;
+    padding-top: 5px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.3em;
+    border-radius: 5px;
+    color: honeydew;
+    transition: all .3sec;
+}
+
+.footer .footer-content .about .socials a:hover{
+    border: 3px solid white;
+    color: white;
+    transition: all .3sec;
+}
+
+
+
+
+.footer .footer-content .links ul a{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color:honeydew;
+    text-decoration: none;
+}
+
+.footer .footer-content .links ul a:hover{
+    color: white;
+    margin-left: 15px;
+    transition: all .3sec;
+}
+
+.footer .footer-content .contact-form .contact-input{
+    background: #272727;
+    color: #bebdbd;
+    margin-bottom: 10px;
+    line-height: 1.5rem;
+    padding: 0.9rem 1.4rem;
+    border: none;
+}
+
+.footer .footer-content .contact-form .contact-input:focus{
+    background: #1a1a1a;
+}
+
+.btn-big{
+    padding: .7rem 1.3rem;
+    line-height: 1.3rem;
+    background-color:whitesmoke;
+    font-weight: 700;
+
+}
+
+.footer .footer-content .contact-form .contact-btn{
+    float: right;
+    padding-bottom: 3px;
+    padding-top:2px ;
+}
+
+
+
+
+/*SlideShow*/
+.slideshow{
+    margin: 0 auto;
+    padding-top: 50px;
+    height: 400px;
+    perspective: 1000px;
+  }
+  .content{
+    margin: auto;
+    width: 150px;
+    perspective: 1000px;
+    position:relative;
+    padding-top: 80px;
+    transform-style: preserve-3d;
+  }
+  .slider-content{
+    width: 100%;
+    position:absolute;
+    float:right;
+    animation: rotate 15s infinite linear;
+    transform-style: preserve-3d;
+  }
+  .slider-content:hover{
+    cursor: pointer;
+    animation-play-state: paused;
+  }
+  .slider-content figure{
+    width:180px;
+    height:120px;
+    border:1px solid #555;
+    overflow:hidden;
+    position:absolute;
+  }
+  .slider-content img{
+    image-rendering: auto;
+    transition: all 300ms;
+    width: 100%;
+    height: 100%;
+  }     
+  .slider-content img:hover{
+    transform: scale(1.2); 
+    transition: all 300ms; 
+ } 
+ .shadow{ 
+    position: absolute; 
+    box-shadow: 0px 0px 0px #000; 
+ }
+ .slider-content figure:nth-child(1){
+    transform:rotateY(0deg) translateZ(300px);
+  }
+   
+  .slider-content figure:nth-child(2){
+    transform:rotateY(40deg) translateZ(300px);
+  }
+  .slider-content figure:nth-child(3){
+    transform:rotateY(80deg) translateZ(300px);
+  }
+  .slider-content figure:nth-child(4){
+    transform:rotateY(120deg) translateZ(300px);
+  }
+  .slider-content figure:nth-child(5){
+    transform:rotateY(160deg) translateZ(300px);
+  }
+  .slider-content figure:nth-child(6){
+    transform:rotateY(200deg) translateZ(300px);
+  }
+  .slider-content figure:nth-child(7){
+    transform:rotateY(240deg) translateZ(300px);
+  }
+  .slider-content figure:nth-child(8){
+    transform:rotateY(280deg) translateZ(300px);
+  }
+  .slider-content figure:nth-child(9){
+    transform:rotateY(320deg) translateZ(300px);
+  }
+  @keyframes rotate {
+    from{
+      transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+  }
+
+ </style>
+ </head>
+ <body>
+
+
+<div>
+    
+    <div class="m_nav">
+        <span class="m_amaze" style="font-size:50px;margin-left:30px">Re</span><span style="font-size:45px;color:white"> use</span>   <span class="m_wow" style="font-size:50px">Fac</span> <span style="font-size:45px;color:white">tory</span> <img height="35px" width="40px">
+    
+        <div class="m_home">
+        <a href="https://www.google.com/url?q=http://home.html&amp;source=gmail-html&amp;ust=1652969406084000&amp;usg=AOvVaw1Ccs9q3l3p6LxZv1_fXH_k" class="m_logout" target="_blank" rel="noreferrer">Logout</a>
+       
+        <a href="https://www.google.com/url?q=http://contactus.html&amp;source=gmail-html&amp;ust=1652969406084000&amp;usg=AOvVaw3vlpXn-KI9LF5ohLAdhNsH" target="_blank" rel="noreferrer">Contact</a>
+        <a href="https://www.google.com/url?q=http://reviewspage.html&amp;source=gmail-html&amp;ust=1652969406084000&amp;usg=AOvVaw09aNMu1Gde-I5BCvgbyaU4" target="_blank" rel="noreferrer">Reviews</a>
+        <a href="https://www.google.com/url?q=http://project1.html&amp;source=gmail-html&amp;ust=1652969406084000&amp;usg=AOvVaw3xR84pdCpZPcMhWaYRRsf5" target="_blank" rel="noreferrer">Available Waste</a>
+        <a href="https://www.google.com/url?q=http://funtodo.html&amp;source=gmail-html&amp;ust=1652969406084000&amp;usg=AOvVaw21TowbhrxqKHmqlXsuGZIR" target="_blank" rel="noreferrer">Fun To Do</a>
+        <a href="https://www.google.com/url?q=http://new.html&amp;source=gmail-html&amp;ust=1652969406084000&amp;usg=AOvVaw1-XZ93xANRRLpz6FV_E78e" target="_blank" rel="noreferrer">Blog</a>
+        <a href="https://www.google.com/url?q=http://about.html&amp;source=gmail-html&amp;ust=1652969406084000&amp;usg=AOvVaw0cYVwUx55tx0QpIXa2_ehC" target="_blank" rel="noreferrer">About</a>
+        <a href="https://www.google.com/url?q=http://home.html&amp;source=gmail-html&amp;ust=1652969406084000&amp;usg=AOvVaw1Ccs9q3l3p6LxZv1_fXH_k" target="_blank" rel="noreferrer">Home</a>
+        </div>
+    </div>
+    <u></u>
+        <section class="m_img">
+            <h1><span style="margin-top:50px;background-color:thistle;border-radius:10px">From Waste To Fashion</span></h1>
+            
+            <section class="m_slideshow" style="background-color:rgb(235,220,202);margin-top:25px;border:3px solid rgb(247,231,169);border-radius:10px">
+                <div class="m_content">
+                   <div class="m_slider-content">
+                      <figure class="m_shadow"><img></figure>
+                      <figure class="m_shadow"><img></figure>
+                      <figure class="m_shadow"><img></figure>
+                      <figure class="m_shadow"><img></figure>
+                      <figure class="m_shadow"><img></figure>
+                      <figure class="m_shadow"><img></figure>
+                      <figure class="m_shadow"><img></figure>
+                      <figure class="m_shadow"><img></figure>
+                      <figure class="m_shadow"><img></figure>
+                      <figure class="m_shadow"><img></figure>
+                   </div>
+                </div>
+             </section>
+
+            
+            
+            
+            
+            
+            
+        </section>
+
+        
+
+        <section class="m_text" style="background-color:floralwhite">
+            <p>In the higher consumer-based society, purchasing capacity and purchasing options are both increasing with the time. It is very easy to reject or throw away things when it is not in use. Teaching the kids about the value of things we need to inculcate best out of waste ideas in them.</p>
+            <p>There are two ways to do that; one is recycling and upcycling. Recycling means changing the product entirely into a new one, like turning old papers to a new paper. On the other hand upcycling is the way to upgrade the exciting product to change its usage or form. This encourages eco-friendly decoration at home and work places as well.</p>
+            <p>Glass bottles,plastic bags and other waste that ends up filling landfills or floating in the sea, will now become a form of sustainable art and our planet will now come out with more originality.</p>
+        </section>
+
+        <h2 style="color:rgb(46,49,51);background-color:thistle;border-radius:10px">WHAT IS UPCYCLED ART?</h2>
+        <img width="33%" style="margin-left:500px;border:10px solid rgb(16,17,17);border-radius:10px;margin-top:30px" alt="">
+        <div class="m_para" style="padding-top:50px">Upcycling, also known as creative reuse, is the process of transforming by-products, waste materials, useless, or unwanted products into new materials or products perceived to be of greater quality, such as artistic value or environmental value.Turning trash into treasure, or recyclables into art, has the power to transform the way we think about the things we so frequently discard. So many items that might see a second life through recycling are often sent to landfills.
+            <p>The practice of reusing and recycling found objects to create new works of art — upcycling — is a movement that&#39;s steadily grown across the country. It&#39;s a way of preserving the environment and creating new art and with the added benefit of saving a few dollars.</p>
+            <p>While one may seeold pieces of wood washed up on the shore of Red River, an artist may see an abstract wall hanging. Broken, out-of-date or seemingly unusable items end up on shelves of secondhand stores. But artists are swooping in to save these items and transform them into something beautiful.</p>
+            <p>&quot;Look at something you would normally throw away or have no use for it anymore,&quot; said artist Steve Porter. &quot;Don&#39;t look at it for what it is. See it for what it could be.&quot;</p>
+            <p>Upcycling also supports a circular economy. A circular economy is a system in which goods are used and reused multiple times rather than getting discarded after one use. This system is more sustainable because it relies on using what we already have rather than constantly creating new products out of new materials.</p>
+        </div>
+        <h2 style="color:rgb(46,49,51);background-color:thistle;border-radius:10px">How does it Benefits the Planet?</h2>
+        <img width="33%" style="margin-left:500px;border-radius:10px;border:10px solid rgb(16,17,17);margin-top:30px" alt="">
+        <div class="m_para_2">
+            Upcycling is incredibly beneficial for the planet. It accomplishes several things at once: It reuses materials we already have, and it creates something new.
+        
+            <p>
+             Giving used products a new life reduces the need to use unethically sourced or unsustainable materials, like plastic, to create new products. Think about shoes made from recycled water bottles. Not only does upcycling plastic prevent a build-up of plastic waste, but it also provides new shoes without using new resources.
+            </p>    
+            <p>
+             The entire upcycling process has three major benefits:
+            </p>
+        
+
+        <p>
+           <h3 style="background-color:rgb(252,228,232);border-radius:10px">1. Minimizes the Extraction of Natural Resources</h3>
+            When you upcycle something, you reduce the need to extract raw materials or create synthetic materials because you already have what you need. This can go a long way for industries that consume a lot of resources—both natural and unnatural. Think about how many trees we can save if all our furniture is made with pre-used wood.
+        </p>
+
+        <p>
+           <h3 style="background-color:rgb(252,228,232);border-radius:10px">2. Reduces Landfill Waste</h3>
+            Upcycling also saves your original product from a fate in the landfill. Even if the original product is recyclable, plastics can only be downcycled once or twice before the product breaks down.
+         
+           Eventually, our recyclables may end up in a landfill, which can be harmful—especially if they aren’t biodegradable. But with upcycling, products can be turned into something that can last much longer.
+        </p>
+
+        <p>
+           <h3 style="background-color:rgb(252,228,232);border-radius:10px">3. Less Manufacturing, Fewer Carbon Emissions </h3>
+            Minimizing the consumption of resources has two benefits: preserving natural resources and reducing the need for manufacturing.
+
+            The process of turning raw materials into a finished product can come with hefty carbon emissions, especially during mass manufacturing. In the U.S. alone, the industry sector produced about 23% of carbon emissions in 2019, according to the Environmental Protection Agency (EPA).
+
+            Plus, recycling still produces carbon emissions. While downcycling is much better than sending something to the landfill, it’s even better to upcycle.
+        </p>
+
+        <h2 style="color:rgb(46,49,51);background-color:thistle;border-radius:10px">How Can You Upcycle?</h2>
+        <img width="33%" style="margin-left:500px;border-radius:10px;border:10px solid rgb(16,17,17);margin-top:10px;margin-bottom:25px" alt="">
+        <p>
+            Upcycling may sound intimidating. (Turning plastic bottles into quality shoes certainly doesn’t sound easy!) But there are plenty of ways you can upcycle and contribute to the circular and sustainable economy.    
+        </p>
+        <h3 style="background-color:rgb(252,228,232);border-radius:10px">1. Shop From Businesses That Upcycle</h3>
+        <p>
+            This one’s pretty easy. If you don’t feel confident in your DIY upcycling abilities, don’t sweat it! There are plenty of businesses out there that do the work for you.
+
+For beauty, there’s UpCircle, which uses upcycled ingredients (like used coffee grounds from coffee shops) in its skincare products. Then there’s the clothing brand Re/Done, which makes new duds from unwanted clothing and repurposed vintage materials. You can even buy upcycled food products from Renewal Mill, which uses upcycled ingredients like leftover soybean pulp from soy milk production.
+
+Every time you shop from a business that upcycles, you’re supporting a more sustainable industry. Plus, it proves to retailers that there’s a demand for upcycled items of all kinds.
+        </p>
+        <h3 style="background-color:rgb(252,228,232);border-radius:10px">2. Give Your Old Items a New Life</h3>
+
+        <p>
+            If you’re feeling creative, there are several easy upcycling projects you can try at home. Look into these DIY home decor ideas, like turning an old rug into a pinboard. Or try these easy ways to upcycle old clothes, including turning a t-shirt into a hanging plant holder.
+
+Want something a little more advanced? You can try turning your TV into a cat bed like blogger Keltainen Kahvipannu (see above!), or crotcheting a tote bag using plastic bags. The opportunities are endless!
+        </p>
+        <br>
+        
+        <p style="font-weight:600">
+            Hey there! Want to help us change the world every day through easy, achievable, eco-friendly tips and tricks? <span style="font-weight:700;font-family:Georgia,&#39;Times New Roman&#39;,Times,serif;color:whitesmoke">Sign up</span> for the Reuse Factory and join our movement of over a million changemakers.
+        </p>
+
+      </div>
+    <u></u>
+
+    
+    
+    <div class="m_footer">
+        <div class="m_footer-content">
+            <div class="m_footer-section m_about">
+                <h1 class="m_logo-text"><span class="m_amaze">Re</span><span style="color:white">use</span> <span class="m_amaze">Fac</span><span style="color:white">tory</span><img height="30px" width="30px"></h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae similique illum incidunt dolores provident unde vitae quod laborum autem repellendus expedita harum, inventore magni eveniet dicta nisi nulla veniam accusantium?</p>
+                <div class="m_contact">
+                    <span><i class="m_fa m_fa-phone"></i> 123-456-789</span>
+                    <span><i class="m_fa m_fa-envelope"></i> <a href="mailto:info@reusefactory.com" target="_blank" rel="noreferrer">info@reusefactory.com</a></span>
+                </div>
+                <div class="m_socials">
+                    <a href="#m__" rel="noreferrer"><i class="m_fa m_fa-facebook"></i></a>
+                    <a href="#m__" rel="noreferrer"><i class="m_fa m_fa-instagram"></i></a>
+                    <a href="#m__" rel="noreferrer"><i class="m_fa m_fa-youtube"></i></a>
+                    <a href="#m__" rel="noreferrer"><i class="m_fa m_fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="m_footer-section m_links">
+                <h2>Quick Links</h2>
+                <br>
+                <ul>
+                    <a href="#m__" rel="noreferrer"><li>Home</li></a>
+                    <a href="#m__" rel="noreferrer"><li>Team</li></a>
+                    <a href="#m__" rel="noreferrer"><li>Blog</li></a>
+                    <a href="#m__" rel="noreferrer"><li>Terms and Conditions</li></a>
+                    <a href="#m__" rel="noreferrer"><li>Gallery</li></a>
+                    <a href="#m__" rel="noreferrer"><li>Events</li></a>
+                    <a href="#m__" rel="noreferrer"><li>Contact</li></a>
+                </ul>
+            </div>
+            <div class="m_footer-section m_contact-form">
+                <h2>Contact Us</h2>
+                <br>
+                <form action="http://post.html" method="post" target="_blank">
+                   <input type="email" name="email" class="m_text-input m_contact-input" size="50px"><br><br>
+                   
+                    <textarea name="message" class="m_text-input m_contact-input" cols="50px"></textarea><br><br>
+                    <a style="color:black;text-decoration:none" rel="noreferrer"> <button type="submit" class="m_btn m_btn-big m_contact-btn">
+                      <i class="m_fa m_fa-envelope"></i>
+                       Send
+                    </button></a>
+                </form>
+                    
+                    
+            </div>
+        </div>
+        <div class="m_footer-bottom">
+             ©Reuse Factory  |  Designed by #S
+        </div>
+    </div>
+    
+
+    
+    
+</div>
+</body></html>
