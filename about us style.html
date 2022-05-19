@@ -1,0 +1,167 @@
+body{
+	margin:auto;
+	padding:0;
+	background-image:url("C:/Users/DELL/Downloads/about1.jpg");
+	background-size:cover;
+	background-repeat:no-repeat;
+	
+	
+	
+}
+
+
+*{
+	font-family:Aclonica;
+	box-sizing:border-box;
+}
+header{
+    background: #1a1819;
+    height: 66px;
+    
+}
+
+header *{
+    color: white;
+}
+
+header .logo{
+    float: left;
+    margin-left: 1em;  
+      
+}
+
+
+
+header ul{
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+header .menu-toggle{
+    display: none;
+}
+
+header ul li{
+    float: left;
+    position: relative;
+}
+
+header ul li a{
+    display:block;
+    padding :21px;
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+header ul li a.logout:hover{
+    color: red;
+}
+
+header ul li a:hover{
+    background: rgb(7, 178, 190);
+    color: rgb(2, 32, 34);
+    transition: 0.3s;
+}
+
+@media only screen and (max-width:750px){
+    
+    
+    
+    header ul{
+        width:100%;
+        background: #ffbac8;
+        
+        
+    }
+    header ul li{
+        width: 100%;
+    }
+
+    header .menu-toggle{
+        display: block;
+        position:absolute;
+        right: 20px;
+        top:20px;
+        font-size: 1.9rem;
+    }
+
+    header .logo{
+        margin-left: .8em;
+    }
+
+    header .logo-text{
+        font-size: .9em;
+    }
+}
+img{
+    padding: auto;
+    
+    object-fit: cover;
+   /* border-radius: 50%;
+    box-shadow: 0 10px 25px white;*/
+}
+.container{
+	
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	color:#cdec00;
+	background:black;
+	margin-top:4vh;
+	margin-left:20vw;
+	margin-right:20vw;
+	
+}
+.about{
+	
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	
+}
+.content{
+	text-align:center;
+}
+.section{
+	display:flex;
+	justify-content:center;
+	align-items: center;
+	color:Black;
+	margin-left:8vw;
+	margin-right:8vw;
+}
+.sec{
+	font-size:1.6em;
+}
+.box1{
+	width: 320px;
+  padding: 7px;
+  border: 6px solid white;
+  margin-top: 3vh;
+  background:black;
+  color:white;
+}	
+.box2{
+	width: 320px;
+  padding: 7px;
+  border: 6px solid white;
+  margin-top: 3vh;
+  background:black;
+  color:white;
+  
+}
+
+footer{
+    background: #343a40;
+    color: #686868;
+    height: 20px;
+    width: 100%;
+    text-align: center;
+    margin-top:10px;
+    left: 0px;
+}
+.amaze,.wow{
+    color:aqua;
+}
