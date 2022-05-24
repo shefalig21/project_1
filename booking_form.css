@@ -3,8 +3,7 @@
 @import "compass/reset";
 @import "compass/css3";
 
-/* Colors */	
-/* ---------------------------------------- */ 
+
 $border: 		 #c6c6c6;
 $border-focus: #9FB1C1;
 $brand-color:  #1b3d4d;
